@@ -1,0 +1,384 @@
+html,
+body {
+  font-family: "Noto Sans KR", serif;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+   padding-top: 1px;  margin-top: -1px; 
+
+
+}
+
+
+.main {
+  width: 90%;
+  height: 95%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+#logo {
+  width: 10%;
+  border-radius: 70%;
+  margin-top: -2%;
+  animation: rotate_img 3s linear infinite;
+}
+
+@keyframes rotate_img {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#title, #name {
+  font-family: 'Song Myung', serif;
+  margin: 0;
+}
+
+.name,
+.level,
+.tutorial {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.head{
+height: 20%;
+}
+.level-box{
+height: 40%;
+}
+.menu{
+height: 15%;
+}
+
+#nameBox {
+  line-height: 30px;
+  width: 300px;
+  font-size: 17px;
+}
+
+table {
+  margin: auto;
+  border-spacing: 10px;
+}
+
+td {
+  border-radius: 10px;
+  padding: 40px 23px;
+  background-color: #f1f1f1;
+}
+
+#tdA {
+  background-color: #e74040;
+}
+
+#tdB {
+  background-color: #368636;
+}
+
+#tdC {
+  background-color: #5656e0;
+}
+
+#startBtn,
+#tutoBtn,
+#rankBtn {
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  width: 30%;
+  margin: 5px;
+  padding: 15px 50px;
+  font-size: 17px;
+}
+.modal-window #rankBtn,.modal-window #startBtn{
+  width: 50%;
+
+}
+#startBtn:hover,
+#tutoBtn:hover,
+#rankBtn:hover {
+  background: black;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Rank */
+
+.lboard_section {
+  width: 1200px;
+  height: 600px;
+  margin: 0px auto 0;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px 40px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.lboard_section .lboard_tabs ul {
+  display: flex;
+}
+
+.lboard_section .lboard_tabs ul li {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a3d51;
+  cursor: pointer;
+}
+
+.lboard_section .lboard_tabs ul li:hover,
+.lboard_section .lboard_tabs ul li.active {
+  color: #fff;
+}
+
+.lboard_wrap {
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  background: rgb(239, 239, 239);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.lboard_wrap .lboard_item {
+  padding: 25px;
+}
+
+.lboard_wrap .lboard_mem {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1.5px solid #575757;
+}
+
+.lboard_wrap .lboard_mem:first-child {
+  padding-top: 0;
+}
+
+.lboard_wrap .lboard_mem:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.lboard_wrap .lboard_mem .img {
+  width: 50px;
+}
+
+.lboard_wrap .lboard_mem img {
+  display: block;
+  width: 100%;
+}
+
+.lboard_wrap .lboard_mem .rank_bar {
+  margin: 0 20px;
+  width: calc(100% - 400px);
+}
+
+.lboard_wrap .lboard_mem .rank_bar p {
+  color: #3a3d51;
+}
+
+.lboard_wrap .lboard_mem .rank_bar p span {
+  margin-right: 5px;
+}
+
+.lboard_wrap .lboard_mem .points, .date {
+  width: 100px;
+  color: #3a3d51;
+  font-size: 1.2rem;
+  padding-left: 1px;
+}
+
+.lboard_wrap .lboard_mem .rank_bar .bar_wrap {
+  width: 100%;
+  height: 15px;
+  background: rgb(229, 229, 229);
+  margin-top: 5px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lboard_wrap .lboard_mem .rank_bar .bar_wrap .inner_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  background: #117a37;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#rank_num {
+  width: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 10px;
+  color: green;
+}
+
+#rank_name {
+  width: 100px;
+  font-size: 1.5rem;
+  font-family: 'Song Myung', serif;
+}
+
+#user_rank {
+  background-color: #f6c66b;
+}
+
+/* Level Card */
+
+.level-row {
+  display: flex;
+  height: 100%;
+  padding: 0 100px;
+}
+
+.level-col {
+  width: 30%;
+  padding: 1.5%;
+}
+
+.level-card {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.level-card .face {
+  height: 50%;
+  transition: 0.5s;
+}
+
+.level-card .face.face1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+  z-index: 1;
+  background: #333;
+}
+
+.level-card:hover .face.face1 {
+  background: #297029;
+  transform: translateY(0);
+}
+
+.level-card .face.face1 .card-content {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.level-card:hover .face.face1 .card-content {
+  opacity: 1;
+}
+
+.level-card .face.face1 .card-content img {
+  max-width: 150px;
+}
+
+.level-card .face.face1 .card-content {
+  /* margin: 10px 0 0; */
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.level-card .face.face2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%);
+}
+
+.level-card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.level-card .card-content a:hover {
+  background: #333;
+  color: #fff;
+}
+.order1 .face1 .card-content{
+  width: 100%;
+  background-image: url("../img/mazeHard.png");
+  background-size: cover;
+}
+.order2 .face1 .card-content{
+  width: 100%;
+  background-image: url("../img/mazeNormal.png");
+  background-size: cover;
+}
+.order3 .face1 .card-content{
+  width: 100%;
+  background-image: url("../img/mazeEasy.png");
+  background-size: cover;
+}
+#webcam {
+  width: 25%;
+  height: 100%;
+ 
+}
+.main-content{
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.card-img-top{
+  width: 20vh;
+}
+
+#webcam p{
+  margin: 0;
+  font-size: 2vh;
+
+}
+h3{
+  margin: 0;
+}
+
+.progress-bar__container {
+  margin: 5px;
+  width: 100%;
+  height: 1vh;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.01s;
+  will-change: transform;
+  box-shadow: 0 0 5px #414141;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
