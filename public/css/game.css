@@ -158,8 +158,9 @@
 
 #maze_section {
     float: left;
-    padding: 10px;
-    width: 75%;
+    /* padding: 10px; */
+    width: 70%;
+    margin: 2vw;
 }
 
 div.box {

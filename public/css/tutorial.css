@@ -4,7 +4,7 @@ input[type=radio] {
 
 .card-carousel {
     position: absolute;
-    width: 50%;
+    width: 50vmin;
     left: 0;
     right: 0;
     margin: auto;
@@ -16,7 +16,8 @@ input[type=radio] {
 .container-carousel {
     /* padding: 30px 10px; */
     width: 75%;
-    height: 100%;
+    margin-top: 5vh;
+    height: 75vh;
     transform-style: preserve-3d;
     justify-content: center;
     flex-direction: column;
@@ -92,15 +93,15 @@ input[type=radio] {
     border: 2px solid rgba(61, 61, 61, 0.8);
     border-radius: 8px;
     width: 70%;
-    margin: 5vw auto;
-    padding: 2vw 0;
+    margin: 5vh auto;
+    /* padding: 2vw 0; */
 }
 
 .upper-part {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 1vh;
+    /* margin-bottom: 1vh; */
     height: 5vh;
     overflow: hidden;
 }
@@ -151,22 +152,22 @@ input[type=radio] {
 }
 
 #item-1:checked~.player #test {
-    transform: translateY(0);
+    transform: translateY(-1vh);
 }
 
 #item-2:checked~.player #test {
-    transform: translateY(-4vw);
+    transform: translateY(-6vh);
 }
 
 #item-3:checked~.player #test {
-    transform: translateY(-8vw);
+    transform: translateY(-11vh);
 }
 
 #item-4:checked~.player #test {
-    transform: translateY(-12vw);
+    transform: translateY(-16vh);
 }
 #item-5:checked~.player #test {
-    transform: translateY(-16vw);
+    transform: translateY(-21vh);
 }
 
 

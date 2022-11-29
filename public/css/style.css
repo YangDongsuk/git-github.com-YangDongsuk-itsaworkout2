@@ -10,20 +10,23 @@ body {
 
 
 }
+p{
+  margin: 0;
+}
 
 
 .main {
-  width: 90%;
-  height: 95%;
-  margin-top: 2%;
-  margin-bottom: 10%;
-  margin-left: 5%;
+  width: 90vw;
+  height: 96vh;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  margin-left: 5vw;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
 
 #logo {
-  width: 10%;
+  width: 10vh;
   border-radius: 70%;
   margin-top: -2%;
   animation: rotate_img 3s linear infinite;
@@ -43,17 +46,17 @@ body {
 .name,
 .level,
 .tutorial {
-  padding-top: 5px;
-  padding-bottom: 20px;
+  /* padding-top: 5px;
+  padding-bottom: 20px; */
 }
 .head{
-height: 20%;
+height: 25vh;
 }
 .level-box{
-height: 40%;
+height: 45vh;
 }
 .menu{
-height: 15%;
+height: 10vh;
 }
 
 #nameBox {
@@ -289,7 +292,7 @@ td {
 }
 
 .level-card .face.face1 .card-content img {
-  max-width: 150px;
+  /* max-width: 150px; */
 }
 
 .level-card .face.face1 .card-content {
@@ -318,32 +321,35 @@ td {
   color: #fff;
 }
 .order1 .face1 .card-content{
-  width: 100%;
+  width: 80%;
   background-image: url("../img/mazeHard.png");
   background-size: cover;
 }
 .order2 .face1 .card-content{
-  width: 100%;
+  width: 80%;
   background-image: url("../img/mazeNormal.png");
   background-size: cover;
 }
 .order3 .face1 .card-content{
-  width: 100%;
+  width: 80%;
   background-image: url("../img/mazeEasy.png");
   background-size: cover;
 }
 #webcam {
   width: 25%;
-  height: 100%;
+  height: 75vh;
+  margin: 5vh 2vw 0vh 2vw;
+
  
 }
 .main-content{
   width: 100%;
-  height: 85%;
+  height: 80vh;
   display: flex;
 }
 .card-img-top{
-  width: 20vh;
+  width: 25vmin;
+  height: 25vmin;
 }
 
 #webcam p{
